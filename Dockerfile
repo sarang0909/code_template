@@ -20,4 +20,4 @@ COPY ./config /code/config
 COPY ./main.py /code/
 
 # Entrypoint for main script
-ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "code_template", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "code_template", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
