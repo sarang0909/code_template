@@ -137,7 +137,12 @@ Here we have created ML inference on FastAPI server with dummy model output.
   ``` 
       pre-commit install  
   ```
-3. Whenever the command git commit is run, the pre-commit hooks will automatically be applied.
+3. Whenever the command git commit is run, the pre-commit hooks will automatically be applied.     
+4. To test before commit,run:  
+
+  ``` 
+      pre-commit  run 
+  ```    
 
 ### CI/CD using Circleci
 1. Add project on circleci website then monitor build on every commit.

@@ -4,13 +4,11 @@ repos:
       - id: black
         name: Black Python code formatter
         entry: black
-        language: python
-        types: [python]
+        language: conda
         args: [--config=pyproject.toml]
       - id: pylint
         name: pylint Python code linter
         entry: pylint
-        language: python
-        types: [python]
+        language: conda
         args: [--rcfile=.pylintrc]
       
