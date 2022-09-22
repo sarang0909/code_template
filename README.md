@@ -98,8 +98,13 @@ Here we have created ML inference on FastAPI server with dummy model output.
   ```
  
 ### Performance Testing
-1. Go inside 'tests' folder on command line.
-2. Run:
+1. Open 2 terminals and start main application in one terminal  
+  ``` 
+      python main.py 
+  ```
+
+2. In second terminal,Go inside 'tests' folder on command line.
+3. Run:
   ``` 
       locust -f locust_test.py  
   ```
@@ -123,7 +128,7 @@ Here we have created ML inference on FastAPI server with dummy model output.
 2. Run:
   ``` 
       docker build -t myimage .  
-      docker run -d -name mycontainer -p 80:80 myimage       
+      docker run -d --name mycontainer -p 5000:5000 myimage         
   ```
 
 ### Pre-commit hooks

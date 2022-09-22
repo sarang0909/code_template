@@ -3,7 +3,6 @@ Module for functional test cases of inference code
 """
 
 from pathlib import Path
-import pytest
 from src.utility.utils import config
 from src.utility import constants
 from src.inference.predictor import Predictor
@@ -21,7 +20,6 @@ class TestPredictor:
 
         assert path.is_file()
 
-    @pytest.fixture(scope="module")
     def test_model_output(self):
         """Tests model output."""
 

@@ -2,15 +2,10 @@
 line-length = 79
 include = '\.py'
 exclude = '''
-/(
+(
     \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | _build
-  | buck-out
   | build
   | dist
-)/
+  | .*.pyc
+)
 '''
