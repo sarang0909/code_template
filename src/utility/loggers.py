@@ -23,7 +23,7 @@ log_path = log_folder_path / config.get(constants.LOG_FILE_NAME)
 LOG_FILE_SIZE = int(config.get(constants.MAX_LOG_FILE_SIZE))
 LOG_FILES_BACKUP_COUNT = int(config.get(constants.LOG_FILES_BACKUP_COUNT))
 
-logger = logging.getLogger(str(config.get(constants.LOG_FILE_NAME)))
+logger = logging.getLogger(str(config.get(constants.APP_NAME)))
 logger.setLevel(logging.INFO)
 
 # Define formatter and loghandler

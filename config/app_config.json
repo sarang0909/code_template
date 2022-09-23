@@ -1,4 +1,5 @@
 {
+    "application_name": "code_template",
     "log_folder_path": "logs",
     "log_file_name": "code_template.log",
     "max_log_file_size": "5000000",
